@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0 !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+
+.clear {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+#floating {
+  position: fixed;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  bottom: 15px;
+  right: 20px;
+  cursor: pointer;
+  background-color: #1388e7;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#floating i {
+  color: #fff;
+}
+
+.upper-nav {
+  width: 95%;
+  margin: auto;
+  position: relative;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 11px;
+  margin-top: 20px;
+}
+.navbar .navbar-brand img {
+  width: 70px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #000;
+  margin-right: 50px;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #000;
+}
+.navbar .navbar-nav .active .nav-link {
+  color: #1388e7;
+}
+
+.header {
+  background-position: center;
+  background-size: cover;
+  padding-top: 230px;
+  padding-bottom: 230px;
+}
+.header .mobile-header-img {
+  display: none;
+}
+.header .header-content h5 {
+  font-size: 51px;
+  line-height: 65px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.main-content {
+  margin-top: 95px;
+}
+.main-content .serv-header {
+  font-size: 30px;
+  text-align: center;
+  color: #b6b6b6;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+}
+.main-content form .checkbox-btn {
+  display: none;
+}
+.main-content form label {
+  display: block;
+}
+.main-content form .card {
+  text-align: left;
+  padding: 20px;
+  cursor: pointer;
+  height: 390px;
+  transition: box-shadow 0.4s ease;
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+.main-content form .card .card-img {
+  border-radius: 5px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.main-content form .card .card-title {
+  font-size: 20px;
+  margin-top: 19px;
+  color: #1388e7;
+  height: 50px;
+}
+.main-content form .card .card-text {
+  font-size: 16px;
+  color: #626262;
+}
+.main-content form .card .cheack-mark span {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #1388e7;
+  border-radius: 50%;
+  margin: auto;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.main-content form .card .cheack-mark-2 i {
+  font-size: 22px;
+  color: #1388e7;
+  display: none;
+  transition: all 0.5s ease;
+}
+.main-content form input[type=checkbox]:checked ~ .card {
+  border: 2px solid #1388e7 !important;
+  box-shadow: 0 3px 24px rgba(54, 0, 126, 0.27);
+}
+.main-content form input[type=checkbox]:checked ~ .card .cheack-mark {
+  display: none;
+}
+.main-content form input[type=checkbox]:checked ~ .card .cheack-mark-2 i {
+  display: block;
+}
+.main-content form .btn-submit {
+  text-align: center;
+  margin-top: 40px;
+}
+.main-content form .btn-submit .btn {
+  background-color: #1388e7;
+  color: #fff;
+  padding: 10px;
+  width: 250px;
+}
+.main-content form .btn-submit .btn:hover {
+  background-color: #fff;
+  color: #1388e7;
+  border: 1px solid #1388e7;
+}
+
+.about-us-content {
+  margin-top: 40px;
+}
+.about-us-content .about-us-page-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.about-us-content .pargraph-content {
+  font-size: 15px;
+  color: #303030;
+  line-height: 28px;
+}
+.about-us-content .pargraph-content span {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+}
+.about-us-content .pargraph-content .header-of-par {
+  display: block;
+}
+
+.contact-us-page .contact-us-form-parent .contact-info {
+  margin-bottom: 50px;
+}
+.contact-us-page .contact-us-form-parent .contact-info i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #1388e7;
+  color: #fff;
+  border-radius: 5px;
+}
+.contact-us-page .contact-us-form-parent .contact-info ul {
+  padding-left: 30px;
+}
+.contact-us-page .contact-us-form-parent .contact-info ul li {
+  margin-bottom: 5px;
+}
+
+#bookingModal .form-group input {
+  margin-top: 5px;
+}
+#bookingModal .form-group label {
+  margin-bottom: 0;
+}
+#bookingModal .form-group h6 {
+  color: #777777;
+  font-size: 13px;
+  margin: 0;
+}
+
+#bookingDone .modal-body {
+  text-align: center;
+}
+#bookingDone .modal-body i {
+  color: green;
+  font-size: 50px;
+}
+#bookingDone .modal-body h5 {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  color: #626262;
+}
+
+footer {
+  background-color: #161415;
+  margin-top: 130px;
+  padding-top: 73px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+footer .social a {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  border-radius: 6px;
+  background-color: #2d2b2c;
+  line-height: 29px;
+  text-align: center;
+  margin: 10px;
+}
+footer .social a i {
+  color: #fff;
+}
+footer .copy {
+  margin-top: 40px;
+}
+footer .copy h5 {
+  margin: 0;
+  color: #878787;
+  font-size: 12px;
+}
+footer .copy h5 a {
+  color: #1388e7;
+}
+
+/*# sourceMappingURL=style.css.map */
